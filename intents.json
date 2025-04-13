@@ -1,0 +1,735 @@
+{"intents": 
+  [
+    {"tag": "greeting",
+      "patterns": ["hi", "how are you", "is anyone there?", "hello", "good day", "whats up", "hey", "greetings"],
+      "responses": ["Hello!Ηow can I help?", "Good to see!Ηow can I help?", "Hi there, how can I help?"],
+      "context_set": "en"
+    },
+    {"tag": "χαιρετισμος",
+      "patterns": ["γεια", "γεια σας", "καλησπερα", "καλημερα", "τι γινεται", "τι κανεις", "ολα καλα"],
+      "responses": ["Γειά σας!Πως θα μπορούσα να βοηθήσω?", "Καλώς ήρθατε!Πως θα μπορούσα να βοηθήσω?", "Γειά!Πως θα μπορούσα να βοηθήσω?"],
+      "context_set": "gr"
+    },
+    {"tag": "goodbye",
+    "patterns": ["cya", "see you later", "goodbye", "i am Leaving", "have a Good day", "bye", "cao", "see ya", "that's all i needed"],
+    "responses": ["BYE!", "Have a good day!", "Talk to you later!", "Goodbye!"],
+    "context_set": "en"
+    },
+    {"tag": "αποχαιρετισμος",
+    "patterns": [ "τα λεμε", "καλη συνεχεια", "ευχαριστω γεια σας", "ευχαριστω πολυ γεια σας", "ευχαριστω πολυ καλη συνεχεια", "μπαι", "δεν χρειαζομαι κατι αλλο", "δεν χρειαζομαι κατι αλλο ευχαριστω", "ευχαριστω", "ευχαριστω πολυ"],
+    "responses": ["Γειά σας!", "Χάρηκα που βοήθησα.Καλή συνέχεια!", "Καλή συνέχεια!", "Αν χρειαστείτε κάτι άλλο είμαστε στν διάθεσή σας!"],
+    "context_set": "gr"
+    },
+   
+   
+
+
+    {"tag": "κατηγοριες υπηρεσιων ληξιαρχειου",
+      "patterns": ["υπηρεσιες ληξιαρχειου","κατηγοριες υπηρεσιων ληξιαρχειου","τι υπηρεσιες παρεχει το ληξιαρχειο","ληξιαρχειο"],
+      "responses": ["Οι κατηγορίες υπηρεσιών ληξιαρχείου είναι οι ακόλουθες:<ul><li>Γενική Ληξιαρχική Πράξη.</li><li>Γάμος - Σύμφωνο Συμβίωσης - Διαζύγιο .</li><li> 3)Τέκνο . </li><li>4) Θάνατος .</li></ul> Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"   ] ,
+      "context_set": "gr"
+    },
+
+
+    {"tag": "categories of registry services",
+    "patterns": ["services of registry","categories of registry services","i want to catch up on the services of registry ","i want to catch up on the categories of registry services","to be aware of the services of registry","to be aware of the categories of registry services"],
+    "responses": ["The categories of registry services are : 1) Civil Status Documents. 2) Marriage - Civil partnership - Divorce. 3) Child 4) Death .Please let me know if you need more information."],
+    "context_set": "en"
+    },
+
+
+    {"tag": "γενικη ληξιαρχικη πραξη",
+    "patterns": ["τι υπηρεσιες περιλαμβανει η γενικη ληξιαρχικη πραξη","τι υπηρεσιες περιλαμβανει η κατηγορια γενικη ληξιαρχικη πραξη","τι περιλαμβανει η γενικη ληξιαρχικη πραξη","υπηρεσιες γενικης ληξιαρχικης πραξης","κατηγοριες γενικης ληξιαρχικης πραξης","γενικη ληξιαρχικη πραξη","τι ειναι η γενικη ληξιαρχικη πραξη"],
+    "responses": ["Η γενική ληξιαρχική πράξη περιλαμβάνει τις εξής υπηρεσίες: 1) Ληξιαρχική πράξη γεννήσεως - γάμου - συμφώνου συμβίωσης - θανάτου . 2) Διόρθωση στοιχείων ληξιαρχικών πράξεων . 3) Μεταβολή ιθαγένειας αλλοδαπού . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "ληξιαρχική πραξη γεννησεως - γαμου - συμφωνου συμβιωσης - θανατου",
+    "patterns": ["ληξιαρχική πραξη γεννησεως","ληξιαρχική πραξη γαμου","ληξιαρχική πραξη συμφωνου συμβιωσης","ληξιαρχική πραξη θανατου","πραξη γεννησεως","πραξη συμφωνου συμβιωσης","πραξη γαμου","πραξη θανατου"],
+    "responses": ["Για την παραπάνω ληξιαρχική πράξη θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη (δεν απαιτείται για την ηλεκτρονική υποβολή) . 2) Αστυνομική Ταυτότητα (δεν απαιτείται για την ηλεκτρονική υποβολή) ."],
+    "context_set": "gr"
+    },
+    {"tag": "διορθωση στοιχειων ληξιαρχικων πραξεων",
+    "patterns": ["διορθωση στοιχειων ληξιαρχικων πραξεων","διορθωση στοιχειων","θα ηθελα να διορθωσω στοιχεια","ληξιαρχική πραξη διορθωσης στοιχειων","θελω να διορθωσω στοιχεια"],
+    "responses": ["Πειτε μου σας παρακαλώ, η διόρθωση στοιχείων ληξιαρχικών πράξεων θα γίνει με τελεσίδικη δικαστική απόφαση ή με την έγκριση του Εισαγγελέα Πρωτοδικών;"],
+    "context_set": "gr"
+    },
+    {"tag": "με τελεσιδικη δικαστικη αποφαση",
+    "patterns": ["με τελεσιδικη δικαστικη αποφαση","θα γινει με τελεσιδικη δικαστικη αποφαση","η διόρθωση στοιχείων ληξιαρχικών πράξεων θα γινει με τελεσιδικη δικαστικη αποφαση","τελεσιδικη δικαστικη αποφαση","τελεσιδικη αποφαση"],
+    "responses": ["Για την διόρθωση στοιχείων ληξιαρχικών πράξεων με τελεσίδικη δικαστική απόφαση θα χρειαστείτε τα εξής: 1) Αίτηση (χορηγείται από την Υπηρεσία) . 2) Επικυρωμένο αντίγραφο της απόφασης του δικαστηρίου . 3) Έκθεση επίδοσης της απόφασης στον εισαγγελέα . 4) Πιστοποιητικό τελεσιδικίας . 5) Δελτίο Αστυνομικής Ταυτότητας του αιτούντος τη διόρθωση .Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "με την εγκριση του εισαγγελεα πρωτοδικων",
+    "patterns": ["με την εγκριση του εισαγγελεα πρωτοδικων","θα γινει με την εγκριση του εισαγγελεα πρωτοδικων","η διόρθωση στοιχείων ληξιαρχικών πράξεων θα γινει με την εγκριση του εισαγγελεα πρωτοδικων","με εγκριση του εισαγγελεα πρωτοδικων","με εγκριση του εισαγγελεα","με εγκριση εισαγγελεα","εγκριση εισαγγελεα"],
+    "responses": ["Για την διόρθωση στοιχείων ληξιαρχικών πράξεων με την έγκριση του Εισαγγελέα Πρωτοδικών θα χρειαστείτε τα εξής: 1) Πιστοποιητικό Οικογενειακής κατάστασης . 2) Πιστοποιητικό Μητρώου Αρρένων . 3) Πιστοποιητικό γάμου από Ι. Μητρόπολη, κ.λ.π .Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "μεταβολη ιθαγενειας αλλοδαπου",
+    "patterns": ["μεταβολη ιθαγενειας αλλοδαπου","μεταβολη ιθαγενειας","θα ηθελα να γινει μεταβολη ιθαγενειας","θα ηθελα μεταβολη ιθαγενειας","θα ηθελα αλλαγη ιθαγενειας","αλλαγη ιθαγενειας"],
+    "responses": ["Για την μεταβολή ιθαγένειας αλλοδαπού θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη μόνο σε περίπτωση αυτοπρόσωπης κατάθεσης . 2) Απόφαση απόκτησης Ιθαγένειας . 3) Φ.Ε.Κ. 4) Πρακτικό ορκομωσίας (σε περίπτωση πολιτογράφησης) .Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+    {"tag": "civil status documents",
+    "patterns": ["civil status documents services","i want to catch up on the services of the civil status documents","to be aware of the civil status documents","to be aware of the categories of registry services","civil status documents"],
+    "responses": ["The civil status documents are : 1) Birth - marriage - civil partnership - death certificate. 2) Corrections of civil status documents. 3) Citizenship changes for foreigners.Please let me know if you need more information."],
+    "context_set": "en"
+    },
+    {"tag": "birth - marriage - civil partnership - death certificate",
+    "patterns": ["birth - marriage - civil partnership - death certificate","birth certificate","marriage certificate","death certificate","civil partnership certificate","i want to catch up on the certificates","to be aware of the certificates"],
+    "responses": ["To issue a birth - marriage - civil partnership - death certificate, you will need to have : 1) A signed application (not required for online submission). 2) ID card (not required for online submission) .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "corrections of civil status documents",
+    "patterns": ["corrections of civil status documents","to be aware of civil status documents corrections"],
+    "responses": ["It would be very helpful to inform me if the corrections will be done by final court order or with the approval of the Prosecutor of First Instance ?"],
+    "context_set": "en"
+    },
+    {"tag": "by final court order",
+    "patterns": ["by final court order","it will be done by final court order","the correction will be done by final court order","final court order"],
+    "responses": ["For the correction of civil status documents by final court order, you will need to have: 1) Application (granted by the Office) . 2) Certified copy of the court's decision . 3) Report on service of the decision on the public prosecutor . 4) Certificate of finality . 5) Identity Card of the applicant for the correction.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "with the approval of the Prosecutor of First Instance",
+    "patterns": ["with the approval of the Prosecutor of First Instance","it will be done by final court order","the correction will be done by final court order","final court order"],
+    "responses": ["For the correction of civil status documents with the approval of the Prosecutor of First Instance, you will need to have: 1) Certificate of Marital Status . 2) Male Registry Certificate . 3) Marriage certificate .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "citizenship changes for foreigners",
+    "patterns": ["citizenship changes for foreigners","citizenship changes","i want to get informed for citizenship changes","i want to get inform for citizenship changes for foreigners"],
+    "responses": ["For citizenship changes for foreigners, you will need to have with you: 1) Application signed only in case of personal filing . 2) Decision to acquire Citizenship . 3) Government Gazette . 4) Minutes of the Swearing-in(Oath,in case of naturalization).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+
+
+    {"tag": "γαμος - συμφωνο συμβιωσης - διαζυγιο",
+    "patterns": ["τι υπηρεσιες περιλαμβανει η κατηγορία γαμος - συμφωνο συμβιωσης - διαζυγιο","τι περιλαμβανει η κατηγορία γαμος - συμφωνο συμβιωσης - διαζυγιο","γαμος - συμφωνο συμβιωσης - διαζυγιο"],
+    "responses": ["Η κατηγορία γάμος - σύμφωνο συμβίωσης - διαζύγιο περιλαμβάνει τις εξής υπηρεσίες: 1) Δήλωση γάμου . 2) Δήλωση διαζυγίου . 3) Δήλωση συμφώνου συμβίωσης . 4) Ανάκτηση οικογενειακού επωνύμου έγγαμης που τέλεσε γάμο προ της 18/2/1983 . 5) Λύση συμφώνου συμβίωσης . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    }, 
+    {"tag": "δηλωση γαμου",
+    "patterns": ["γαμος","δηλωση γαμου","δηλωση ζευγαριου","να δηλωσουμε οτι παντρευτηκαμε","τι πρεπει να κανουμε για να δηλωσουμε οτι παντρευτηκαμε","δηλωση παντρειας","να δηλωσουμε το παντρεμα","να δηλωσουμε την παντρεια"],
+    "responses": ["Για την δήλωση γάμου θα χρειαστείτε τα εξής: 1) Αίτηση Υπογεγραμμένη . 2) Δήλωση τέλεσης γάμου από ιερέα ή δήμαρχο (σε περίπτωση πολιτικού γάμου), υπογεγραμμένη από τους δύο συζύγους και τους μάρτυρες . 3) Αστυνομικές Ταυτότητες των συζύγων ή διαβατήρια (σε περίπτωση πολιτών 3ης χώρας με θεωρημένη άδεια παραμονής) . 4) Πράξη προσδιορισμού επωνύμου τέκνων από την Εκκλησία ή το Δήμο . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση διαζυγιου",
+    "patterns": ["δηλωση διαζυγιου","να δηλωσουμε οτι χωριζουμε","τι πρεπει να κανουμε για να δηλωσουμε οτι χωριζουμε","δηλωση χωρισμου","πως δηλωνουμε οτι χωριζουμε","πως δηλωνουμε διαζυγιο","πως δηλωνουμε το διαζυγιο"],
+    "responses": ["Ενδιαφέρεστε για συμβολαιογραφικό διαζύγιο ή για δικαστικό διαζύγιο"],
+    "context_set": "gr"
+    },
+    {"tag": "συμβολαιογραφικο διαζυγιο",
+    "patterns": ["συμβολαιογραφικο διαζυγιο","συμβολαιογραφικο","ενδιαφερομαστε για συμβολαιογραφικό διαζύγιο","για συμβολαιογραφικό διαζύγιο","ενδιαφερομαι για συμβολαιογραφικό διαζύγιο"],
+    "responses": ["Για συμβολαιογραφικό διαζύγιο θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Συμβολαιογραφικό έγγραφο . 3) Διαζευκτήριο της Ιερας Μητροπόλεως (σε περίπτωση θρησκευτικού γάμου) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δικαστικο διαζυγιο",
+    "patterns": ["δικαστικο διαζυγιο","δικαστικο","ενδιαφερομαστε για δικαστικο διαζύγιο","για δικαστικο διαζυγιο","ενδιαφερομαι για δικαστικο διαζυγιο"],
+    "responses": ["Πειτε μου σας παρακαλώ, είναι το διαζύγιο συνεναιτικό ή κατ' αντιδικία ;"],
+    "context_set": "gr"
+    },
+    {"tag": "δικαστικο συνεναιτικο διαζυγιο",
+    "patterns": ["δικαστικο συνεναιτικο διαζυγιο","συνεναιτικο διαζυγιο","συνεναιτικο","ενδιαφερομαστε για δικαστικο συνεναιτικο διαζυγιο","για δικαστικο συνεναιτικο διαζυγιο","ενδιαφερομαι για δικαστικο συνεναιτικο διαζυγιο"],
+    "responses": ["Για συνεναιτικό διαζύγιο θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Δικαστική Απόφαση . 3) Πιστοποιητικό Τελεσιδικίας του πρωτοδικείου . 4) Έκθεση παραίτησης απο τα ένδικα μεσα . 5) Διαζευκτήριο της Ιερας Μητροπόλεως (σε περίπτωση θρησκευτικού γάμου) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δικαστικο κατ' αντιδικια διαζυγιο",
+    "patterns": ["δικαστικο κατ' αντιδικια διαζυγιο","κατ' αντιδικια διαζυγιο","κατ' αντιδικια","ενδιαφερομαστε για δικαστικο κατ' αντιδικια διαζυγιο","για δικαστικο κατ' αντιδικια διαζυγιο","ενδιαφερομαι για δικαστικο κατ' αντιδικια διαζυγιο"],
+    "responses": ["Για κατ' αντιδικία διαζύγιο θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Δικαστική Απόφαση . 3) Πιστοποιητικό Τελεσιδικίας του πρωτοδικείου . 4) Έκθεση επίδοσης . 5) Διαζευκτήριο της Ιερας Μητροπόλεως (σε περίπτωση θρησκευτικού γάμου) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση συμφωνου συμβιωσης",
+    "patterns": ["δηλωση συμφωνου συμβιωσης","συμφωνο συμβιωσης","τι χρειαζομαστε για δηλωση συμφωνου συμβιωσης","ενδιαφερομαστε για δηλωση συμφωνου συμβιωσης","θελουμε συμφωνο συμβιωσης"],
+    "responses": ["Για την δήλωση συμφώνου συμβίωσης θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Σύμφωνο Συμβίωσης (πρωτότυπο) . 3) Ταυτότητες και των δύο συμβαλλομένων . 4) Το Α.Φ.Μ. και το Α.Μ.Κ.Α. των δύο συμβαλλομένων. Σε περίπτωση που δεν υπάρχει θα προσκομίζεται υπεύθυνη δήλωση περί μη ύπαρξης . 5) Εάν υφίσταται Ασφαλιστικός Φορέας 6) Πιστοποιητικά Γεννήσεων τελευταίου τριμήνου  (σε περίπτωση πολιτών 3ης χώρας επίσημα μεταφρασμένο*) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "ανακτηση οικογενειακου επωνυμου",
+    "patterns": ["ανακτηση οικογενειακου επωνυμου","ανακτηση επωνυμου","τι χρειαζομαι για ανακτηση οικογενειακου επωνυμου","τι χρειαζομαι για ανακτηση επωνυμου","ενδιαφερομαι ανακτηση επωνυμου","θελω ανακτηση επωνυμου","ανακτηση οικογενειακου επωνυμου εγγαμης που τελεσε γαμο προ της 18/2/1983"],
+    "responses": ["Για την δήλωση ανάκτησης οικογενειακού επωνύμου θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Ταυτότητα ενδιαφερόμενης . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "λυση συμφωνου συμβιωσης",
+    "patterns": ["λυση συμφωνου συμβιωσης","διακοπη συμφωνου συμβιωσης","τι χρειαζομαι για την λυση συμφωνου συμβιωσης","τι χρειαζομαι για λυση συμφωνου συμβιωσης","ενδιαφερομαι για λυση συμφωνου συμβιωσης","θελω λυση συμφωνου συμβιωσης","επιθυμω την λυση συμφωνου συμβιωσης"],
+    "responses": ["Πειτε μου σας παρακαλώ, επιθυμείτε λύση συμφώνου συμβίωσης με συμβολαιογραφικό έγγραφο ή με ληξιαρχική πράξη γάμου ;"],
+    "context_set": "gr"
+    },
+    {"tag": "λυση συμφωνου συμβιωσης με συμβολαιογραφικο εγγραφο",
+    "patterns": ["με συμβολαιογραφικο εγγραφο","λυση συμφωνου συμβιωσης με συμβολαιογραφικο εγγραφο","συμβολαιογραφικο εγγραφο","ενδιαφερομαι για λυση συμφωνου συμβιωσης με συμβολαιογραφικο εγγραφο","για λυση συμφωνου συμβιωσης με συμβολαιογραφικο εγγραφο"],
+    "responses": ["Για λύση συμφώνου συμβίωσης με συμβολαιογραφικό έγγραφο θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Συμβολαιογραφικό εγγραφο . 3) Ταυτότητα Αιτούντα . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "λυση συμφωνου συμβιωσης με ληξιαρχική πραξη γαμου",
+    "patterns": ["με ληξιαρχική πραξη γαμου","λυση συμφωνου συμβιωσης με ληξιαρχική πραξη γαμου","ληξιαρχική πραξη γαμου","ενδιαφερομαι για λυση συμφωνου συμβιωσης με ληξιαρχική πραξη γαμου","για λυση συμφωνου συμβιωσης με ληξιαρχική πραξη γαμου"],
+    "responses": ["Για λύση συμφώνου συμβίωσης με ληξιαρχική πράξη γάμου, και εφόσον έχει τελεστεί με προθεσμία κατάθεσης εντός ενός μηνός θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Ληξιαρχική πράξη γάμου (εντός ενός μηνός σε περίπτωση τέλεσης γάμου) . 3) Ταυτότητα Αιτούντα . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+
+    {"tag": "marriage - civil partnership - divorce",
+    "patterns": ["marriage - civil partnership - divorce","what are the servises that marriage - civil partnership - divorce category provides","to be aware of the marriage - civil partnership - divorce category ","what servises are included at the marriage - civil partnership - divorce category"],
+    "responses": ["The marriage - civil partnership - divorce category provides the following services: 1) Marriage declaration. 2) Divorce declaration. 3) Civil partnership statement . 4) Family name recovery of a married woman before 18/2/1983 . 5) Civil partnership dissolution .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "marriage declaration",
+    "patterns": ["declaration of marriage","marriage declaration","i want to declare a marriage","i need to know the procedure of a marriage declaration","declare a marriage","marriage declaration procedure"],
+    "responses": ["For a marriage declaration , you need to have: 1) Application signed . 2) Declaration of marriage by a priest or mayor (in case of civil marriage), signed by both spouses and witnesses . 3) IDs or passports of spouses (in case of 3rd country citizens with validated residence permit) . 4) Determination act of the children's surname by the Church or the Municipality.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "divorce declaration",
+    "patterns": ["divorce declaration","declaration of divorce","i want to declare a divorce","i need to know the procedure of a divorce declaration","declare a divorce","divorce declaration procedure"],
+    "responses": ["Do you need to declare a notarial or a judicial divorce?"],
+    "context_set": "en"
+    },
+    {"tag": "notarial divorce",
+    "patterns": ["notarial divorce","notarial","i'm interested in a notarial divorce","a notarial one","i need a notarial divorce"],
+    "responses": ["For a notarial divorce you will need : 1) Application signed . 2) Notarial document . 3) Holy Metropolis divorce(in case of religious marriage).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "judicial divorce",
+    "patterns": ["judicial divorce","judicial","i'm interested in a judicial divorce","a judicial one","i need a judicial divorce"],
+    "responses": ["Inform me please, is the divorce consensual or adversarial;"],
+    "context_set": "en"
+    },
+    {"tag": "consensual judicial divorce",
+    "patterns": ["consensual judicial divorce","consensual divorce","consensual","i'm interested in a consensual judicial divorce"],
+    "responses": ["For a consensual judicial divorce you will need : 1) Application signed . 2) Judgement . 3) Finality certificate of the First Instance Court. 4) Waiver report . 5) Holy Metropolis divorce(in case of religious marriage).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "adversarial judicial divorce",
+    "patterns": ["adversarial judicial divorce","adversarial divorce","adversarial","i'm interested in a adversarial judicial divorce"],
+    "responses": ["For an adversarial judicial divorce you will need : 1) Application signed . 2) Judgement . 3) Finality certificate of the First Instance Court. 4) Performance report . 5) Holy Metropolis divorce(in case of religious marriage).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "civil partnership statement",
+    "patterns": ["δηλωση συμφωνου συμβιωσης","civil partnership","what do i need for civil partnership statement","i'm interested in civil partnership statement"],
+    "responses": ["For a civil partnership statement you will need : 1) Application signed . 2) Civil Partnership (original) . 3) Both identities . 4)  Α.Φ.Μ. and Α.Μ.Κ.Α. of both(or solemn declaration that don't exist). 5) Insurance Institution (if there is one). 6) Last trimester birth certificates(officially translated in case of 3rd country citizens*) .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "family name recovery",
+    "patterns": ["family name recovery","what do i need to do to recover my family name","procedure of family name recovery","i'm interested in family name recovery","family name recovery of a married woman before 18/2/1983"],
+    "responses": ["For family name recovery of a married woman before 18/2/1983 you will need to have : 1) Application signed . 2) Identity .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "civil partnership dissolution",
+    "patterns": ["civil partnership dissolution","what do i need to do to get civil partnership dissolution","i'm interested in civil partnership dissolution","dissolution of a civil partnership"],
+    "responses": ["Inform me please, the dissolution of the civil partnership will be by marriage certificate or with notarized document?"],
+    "context_set": "en"
+    },
+    {"tag": "civil partnership dissolution with notarized document",
+    "patterns": ["civil partnership dissolution with notarized document","with notarized document","by notarized document","i'm interested in civil partnership dissolution with notarized document","what do i need to do to get civil partnership dissolution with notarized document"],
+    "responses": ["For a civil partnership dissolution with notarized document you will need to have: 1) Application signed . 2) Notarial document . 3) Applicant's Identity . Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "civil partnership dissolution by marriage certificate",
+    "patterns": ["civil partnership dissolution by marriage certificate","by marriage certificate","with marriage certificate","i'm interested in civil partnership dissolution by marriage certificate","what do i need to do to get civil partnership dissolution by marriage certificate"],
+    "responses": ["For a civil partnership dissolution by marriage certificate you will need to have: 1) Application signed . 2) Marriage certificate (within one month in case of marriage) . 3) Declarant Identity .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+
+
+    {"tag": "τεκνο",
+    "patterns": ["τι υπηρεσιες περιλαμβανει η κατηγορια τεκνο","τι περιλαμβανει η κατηγορια τεκνο","τεκνο"],
+    "responses": ["Η κατηγορία τέκνο περιλαμβάνει τις εξής υπηρεσίες: 1) Δήλωση γέννησης . 2) Δήλωση πράξης υιοθεσίας . 3) Δήλωση πράξης ονοματοδοσίας . 4) Δήλωση πράξης εκούσιας αναγνώρισης τέκνου . 5) Δήλωση βάπτισης . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση γεννησης",
+    "patterns": ["δηλωση γεννησης","δηλωση γεννησης τεκνου","δηλωση γεννησης παιδιου","γεννηση"],
+    "responses": ["Κάθε γέννηση που λαμβάνει χώρα ως γεγονός στα όρια του Δήμου Χανίων, πρέπει να δηλώνεται : Στο μαιευτήριο όπου συνέβη ο τοκετός ή στο Ληξιαρχείο Χανίων εφόσον ο τοκετός συνέβη σε άλλο μέρος (π.χ. οικία, καθ΄ οδόν προς το μαιευτήριο, κλπ) .Η γέννηση πρέπει να δηλώνεται εντός δέκα (10) ημερολογιακών ημερών από τον τοκετό. Η παραπάνω προθεσμία ισχύει και για τον προσδιορισμό δημοτικότητας τέκνου εντός γάμου σύμφωνα με το άρθρο 15 του ΚΔΚ. Υπόχρεοι για την δήλωση γέννησης (στη περίπτωση που ο τοκετός συνέβη σε άλλο μέρος) είναι: Ο πατέρας, ο γιατρός, η μαία, η μητέρα και κάθε τρίτος που παραστάθηκε στον τοκετό. Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση πραξης υιοθεσιας",
+    "patterns": ["δηλωση πραξης υιοθεσιας","δηλωση υιοθεσιας","υιοθεσια","υιοθετηση"],
+    "responses": ["Για δήλωση πράξης υιοθεσίας θα χρειαστείτε τα εξής: 1) Αίτηση. 2) Τελεσίδικη δικαστική απόφαση . 3) Αστυνομικές Ταυτότητες των θετών γονιών . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση πραξης ονοματοδοσιας",
+    "patterns": ["δηλωση πραξης ονοματοδοσιας","δηλωση ονοματοδοσιας","δηλωση ονοματος","ονοματοδοσια","δηλωση για το ονομα"],
+    "responses": ["Για δήλωση πράξης ονοματοδοσιας θα χρειαστείτε τα εξής: 1) Δελτία Αστυνομικής Ταυτότητας και των δύο γονέων. 2) Έγγραφη εξουσιοδότηση (σε περίπτωση έκδοσης μέσω του gov.gr δεν χρειάζονται θεώρηση, σε περίπτωση που θα προσέλθει στο Ληξιαρχείο μόνο ο ένας γονέας) θεωρημένη νόμιμα για το γνήσιο της υπογραφής από δημόσια αρχή και στην οποία θα πρέπει να αναγράφεται και το όνομα του παιδιού. 3) Αίτηση . ΣΕ ΠΕΡΊΠΤΩΣΗ ΠΟΥ ΤΟ ΤΈΚΝΟ ΓΕΝΝΉΘΗΚΕ ΣΕ ΆΛΛΟ ΔΉΜΟ, θα χρειαστείτε ακόμα : 1) Αντίγραφο ληξιαρχικής πράξης γέννησης του τέκνου από το αρμόδιο ληξιαρχείο . 2) Αποδεικτικό μόνιμης κατοικίας (λογαριασμό ΔΕΚΟ, κ.λ.π.) . ΣΕ ΠΕΡΊΠΤΩΣΗ ΠΟΛΙΤΏΝ 3ης ΧΏΡΑΣ ΑΠΑΙΤΟΎΝΤΑΙ ΤΑ ΕΞΉΣ: 1) Διαβατήρια και των δύο γονέων . 2) Σε περίπτωση δήλωσης από τον ένα γονέα, απαιτείται νόμιμα θεωρημένη εξουσιοδότηση του άλλου γονέα για το γνήσιο της υπογραφής από δημόσια αρχή, στην οποία εκτός των άλλων θα  περιλαμβάνει το όνομα του παιδιού με Ελληνικούς και Λατινικούς χαρακτήρες . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση πραξης εκουσιας αναγνωρισης τεκνου",
+    "patterns": ["δηλωση πραξης εκουσιας αναγνωρισης τεκνου","δηλωση εκουσιας αναγνωρισης τεκνου","για εκουσια αναγνωριση τεκνου","εκουσια αναγνωριση τεκνου","αναγνωριση τεκνου"],
+    "responses": ["Για δήλωση πράξης εκούσιας αναγνώρισης τέκνου θα χρειαστείτε τα εξής: 1) Αίτηση 2) Εκούσια αναγνώριση από το συμβολαιογράφο . 3) Πράξη προσδιορισμού επωνύμου τέκνου (ενωπίων του ληξιάρχου με ταυτόχρονη παρουσία και των δυο γονέων) . 4) Δήλωση δημοτικότητας (ενωπίων του ληξιάρχου με ταυτόχρονη παρουσία και των δυο γονέων) . 5) Πρόσφατη ( εντός μήνα ) Ληξιαρχική πραξη γέννησης, σε περίπτωση που το παιδί εχει γεννηθεί αλλού (π.χ Αθήνα, Ηράκλειο, Θεσσαλονίκη) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση βαπτισης",
+    "patterns": ["δηλωση βαπτισης","για δηλωση βαπτισης","θελω να κανω δηλωση βαπτισης","επιθυμω να δηλωσω βαπτιση τεκνου","ενδιαφερομαι για δηλωση βαπτισης τεκνου","ενδιαφερομαι για δηλωση βαπτισης"],
+    "responses": ["Για δήλωση βάπτισης τέκνου θα χρειαστείτε τα εξής: 1) Αίτηση υπογεγραμμένη . 2) Ταυτότητα δηλούντα . 3) Την δήλωση τέλεσης βάπτισης του ιερέα, υπογεγραμμένη και από τους δύο γονείς .Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+    {"tag": "child",
+    "patterns": ["what are the servises that child category provides","to be aware of the child category","child","what servises are included at the child category","child category"],
+    "responses": ["The child category provides the following services: 1) Birth declaration . 2) Adoption act declaration . 3) Naming act statement . 4) Voluntary recognition act of a child  declaration . 5) Christening statement . Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "birth declaration",
+    "patterns": ["birth declaration","child's birth declaration","birth"],
+    "responses": ["Every birth that takes place as an event within the boundaries of the Municipality of Chania, must be stated: 1) in the maternity ward where the birth occurred or , 2)at the Registry Office of Chania if the birth occurred in another place (e.g. house, on the way to the maternity hospital, etc.) The birth must be declared within ten (10) calendar days of the birth. The above deadline also applies to the determination of the popularity of a child in marriage. Liable for the birth declaration (in case the birth occurred in another place) are: The father, the doctor, the midwife, the mother and any third person who attended the birth.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "adoption act declaration",
+    "patterns": ["adoption act declaration","adoption declaration","adoption act","adoption","i want to declare an adoption","i'm interested in an adoption act declaration","what do i need to do to declare an adoption"],
+    "responses": ["For an adoption act declaration you will need:1) Adoption act request. 2) Final court decision . 3) IDs of the adoptive parents .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "naming act statement",
+    "patterns": ["naming act statement","naming statement","name declaration ","declaration of name","i want to declare a naming act","what do i need to do to declare a naming act"],
+    "responses": ["For a naming act statement you will need: 1) Identity Cards of both parents. 2)Written authorization legally certified for the authenticity of the signature by a public authority and in which the name of the child should be indicated.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "voluntary recognition act of a child declaration",
+    "patterns": ["voluntary recognition act of a child  declaration","recognition act of a child  declaration","i want to declare a voluntary recognition act of a child"],
+    "responses": ["For a voluntary recognition act of a child declaration you will need: 1) Request 2) Voluntary recognition by the notary . 3) Act of determining the surname of a child (in the presence of the registrar with the simultaneous presence of both parents) . 4) Statement of popularity (in the presence of the registrar with simultaneous presence of both parents) . 5) Recent (within a month) birth certificate, in case the child was born elsewhere (e.g. Athens, Heraklion, Thessaloniki).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "christening statement",
+    "patterns": ["christening statement","baptism statement","i want to declare a baptism","what do i need to do to declare a christening"],
+    "responses": ["For christening statement you will need: 1) Application signed . 2) Identity of the declarant . 3) The priest's baptismal declaration, signed by both parents.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+
+
+    {"tag": "θανατος",
+    "patterns": ["τι υπηρεσιες περιλαμβανει η κατηγορια θανατος","τι περιλαμβανει η κατηγορια θανατος","θανατος"],
+    "responses": ["Η κατηγορία θάνατος περιλαμβάνει τις εξής υπηρεσίες: 1) Δήλωση θανάτου . 2) Έκδοση άδειας ταφής σε Δημοτικό Κοιμητήριο (υποβολή από Γραφείο Τελετών) . 3) Έκδοση άδειας ταφής σε Δημοτικό Κοιμητήριο (υποβολή από συγγενή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "δηλωση θανατου",
+    "patterns": ["δηλωση θανατου","για δηλωση θανατου","θελω να κανω δηλωση θανατου","επιθυμω να δηλωσω εναν θανατο","ενδιαφερομαι για δηλωση θανατου"],
+    "responses": ["Για δήλωση θανατου θα χρειαστείτε τα εξής: 1) Ιατρικό πιστοποιητικό θανάτου, νόμιμα θεωρημένο για το γνήσιο της υπογραφής του Ιατρού από την Ελληνική Αστυνομία, τα Κ.Ε.Π ή τον Ιατρικό Σύλλογο. Το πιστοποιητικό πρέπει να είναι πλήρως συμπληρωμένο και όλα τα πεδία του θεωρούνται προαπαιτούμενα . 2) Αστυνομική ταυτότητα του δηλούντος το γεγονός . 3) Η Αστυνομική ταυτότητα του θανόντος ή της θανούσης (σε περίπτωση κατοίκου 3ης χώρας , διαβατήριο) ή βεβαίωση απώλειας αυτής . 4) Σε περίπτωση που ο ενταφιασμός γίνει σε κοιμητήρια εκτός ορίων του Δήμου Χανίων και εφόσον ο θάνατος συνέβη στα όρια του Δήμου Χανίων, απαιτείται η απόδειξη πληρωμής τελών ενταφιασμού (εφόσον είναι αναγκαία) .Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εκδοση αδειας ταφης σε δημοτικο κοιμητηριο",
+    "patterns": ["εκδοση αδειας ταφης σε δημοτικο κοιμητηριο","εκδοση αδειας ταφης","εκδοση αδειας για ταφη","αδεια για ταφη","αδεια ταφης"],
+    "responses": ["Πειτε μου σας παρακαλώ, η υποβολή γίνεται από συγγενή ή από Γραφείο Τλετών ;"],
+    "context_set": "gr"
+    },
+    {"tag": "εκδοση αδειας ταφης σε δημοτικο κοιμητηριο απο συγγενη",
+    "patterns": ["υποβολη απο συγγενη","απο συγγενη","συγγενη","εκδοση αδειας ταφης σε δημοτικο κοιμητηριο απο συγγενη","εκδοση ταφης απο συγγενη","εκδοση αδειας ταφης απο συγγενη"],
+    "responses": ["Για την έκδοση άδειας ταφής σε Δημοτικό Κοιμητήριο με υποβολή που γίνεται από συγγενή θα χρειαστείτε τα εξής: 1) Αίτηση που κατατίθεται από τον συγγενή και αναφέρει σε ποιο κοιμητήριο επιθυμεί να πραγματοποιηθεί ο ενταφιασμός (δεν απαιτείται για την ηλεκτρονική υποβολή) . 2) Το αποδεικτικό εξόφλησης του κόστους ενοικίασης . 3) Μια υπεύθυνη δήλωση . 4) Ιατρικό πιστοποιητικό . 5) Αστυνομική ταυτότητα του αποβιωσάντα ή άδεια παραμονής σε περίπτωση αλλοδαπού πολίτη . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εκδοση αδειας ταφης σε δημοτικο κοιμητηριο απο γραφειο τελετων",
+    "patterns": ["υποβολη απο γραφειο τελετων","απο γραφειο τελετων","γραφειο τελετων","εκδοση αδειας ταφης σε δημοτικο κοιμητηριο απο γραφειο τελετων","εκδοση ταφης απο γραφειο τελετων","εκδοση αδειας ταφης απο γραφειο τελετων"],
+    "responses": ["Για την έκδοση άδειας ταφής σε Δημοτικό Κοιμητήριο με υποβολή που γίνεται από Γραφείο Τελετών θα χρειαστείτε τα εξής: 1) Αίτηση που κατατίθεται από τον συγγενή και αναφέρει σε ποιο κοιμητήριο επιθυμεί να πραγματοποιηθεί ο ενταφιασμός (δεν απαιτείται για την ηλεκτρονική υποβολή) . 2) Το αποδεικτικό εξόφλησης του κόστους ενοικίασης . 3) Μια υπεύθυνη δήλωση . 4) Ιατρικό πιστοποιητικό . 5) Αστυνομική ταυτότητα του αποβιωσάντα ή άδεια παραμονής σε περίπτωση αλλοδαπού πολίτη . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+    {"tag": "death",
+    "patterns": ["what are the servises that death category provides","to be aware of the death category","child","what servises are included at the death category","death category"],
+    "responses": ["The death category provides the following services: 1) Death declaration . 2) Issuance of a burial permit in a Municipal Cemetery (submitted by a Funeral Home) . 3) Issuance of a burial permit in a Municipal Cemetery (submitted by a relative) . Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "death declaration",
+    "patterns": ["death declaration","death","i want to declare a death","what do i need to do to declare a death"],
+    "responses": ["For a death declarration you will need : 1) Medical death certificate, legally certified for the authenticity of the doctor's signature by the Hellenic Police, the K.E.P. or the Medical Association. The certificate must be fully completed and all its fields are considered prerequisite. 2) Identity card of the declarant . 3) The identity card of the deceased (passport ,in case of a resident of a 3rd country) or a certificate of loss(of the ID or passport) . 4) In case the burial takes place in cemeteries outside the boundaries of the Municipality of Chania and if the death occurred within the boundaries of the Municipality of Chania, proof of payment of burial fees is required (if necessary) .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "burial permit issuance in a municipal cemetery",
+    "patterns": ["burial permit issuance in a municipal cemetery","burial permit issuance","what do i need to do for a burial permit issuance "],
+    "responses": ["Inform me please, is the burial permit issuance in a municipal cemetery submitted by a Funeral Home or by a relative;"],
+    "context_set": "en"
+    },
+    {"tag": "burial permit issuance in a municipal cemetery submitted by relative",
+    "patterns": ["submitted by a relative","by a relative","relative","burial permit issuance in a municipal cemetery submitted by a relative","burial permit issuance by relative","burial permit issuance submitted by relative"],
+    "responses": ["For a burial permit issuance in a municipal cemetery submitted by relative you will need : 1) Application filed by the relative stating in which cemetery he wishes the burial to take place (not required for electronic submission) . 2) Proof of the rental cost payment. 3) A solemn declaration . 4) Medical certificate . 5) Identity card of the deceased or residence permit in case of a foreign citizen.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "burial permit issuance in a municipal cemetery submitted a funeral home",
+    "patterns": ["submitted by a funeral home","by a funeral home","funeral home","burial permit issuance in a municipal cemetery submitted by a funeral home","burial permit issuance by funeral home","burial permit issuance submitted by funeral home"],
+    "responses": ["For a burial permit issuance in a municipal cemetery submitted by a Funeral Home you will need : 1) Application filed by the relative stating in which cemetery he wishes the burial to take place (not required for electronic submission) . 2) Proof of the rental cost payment. 3) A solemn declaration . 4) Medical certificate . 5) Identity card of the deceased or residence permit in case of a foreign citizen.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+    {"tag": "υπηρεσιες δημοτολογιου",
+      "patterns": ["υπηρεσιες δημοτολογιου","κατηγοριες υπηρεσιων δημοτολογιου","τι υπηρεσιες παρεχει το δημοτολογιου","δημοτολογιο"],
+      "responses": ["Οι κατηγορίες υπηρεσιών δημοτολογίου είναι οι ακόλουθες:1)Εκλογικοί κατάλογοι . 2) Διόρθωση / Αλλαγή Στοιχείων . 3) Μητρώα Αρρένων . 4) Πιστοποιητικά . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+      "context_set": "gr"
+    },
+
+
+    {"tag": "categories of municipal register services",
+    "patterns": ["municipal register services","which are the municipal register categories","services of municipal register","categories of municipal register services","i want to catch up on the services of municipal register ","i want to catch up on the categories of municipal register services","to be aware of the municipal register services","to be aware of the categories of municipal register services"],
+    "responses": ["The categories of municipal register services are : 1) Εlectoral register . 2) Correction / Change of Data . 3) Male Registries . 4) Certificates .Please let me know if you need more information."],
+    "context_set": "en"
+    },
+
+
+
+    {"tag": "εκλογικοι καταλογοι",
+    "patterns": ["τι υπηρεσιες περιλαμβανουν οι εκλογικοι καταλογοι","τι υπηρεσιες περιλαμβανει η κατηγορια εκλογικοι καταλογοι","τι περιλαμβανουν οι εκλογικοι καταλογοι","υπηρεσιες εκλογικων καταλογων","κατηγοριες εκλογικων καταλογων","εκλογικοι καταλογοι","τι ειναι οι εκλογικοι καταλογοι"],
+    "responses": ["Οι Εκλογικοί κατάλογοι περιλαμβάνουν τις εξής υπηρεσίες: 1) Mεταδημότευση . 2) Εγγραφές στους ειδικούς καταλόγους ετεροδημοτών . 3) Αλλαγή εκλογικού διαμερίσματος . 4) Εγγραφές Ευρωπαίων πολιτών χωρών μελών της Ευρωπαϊκής Ένωσης σε ειδικούς εκλογικούς καταλόγους . 5) Διαγραφή από τους ειδικούς εκλογικούς καταλόγους ετεροδημοτών . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "μεταδημοτευση",
+    "patterns": ["μεταδημοτευση","επιθυμω μεταδημοτευση","χρειαζεται να γινει μεταδημοτευση","θελω να κανω μεταδημοτευση","διαδικασια μεταδημοτευση","επιθυμω την μεταδημοτευση μου"],
+    "responses": ["Πειτε μου σας παρακαλώ, επιθυμείτε μεταδημότευση λόγω συνεχούς διετούς κατοικίας , λόγω γάμου ή λόγω  ανάκτησης της αρχικής δημοτικότητας σας ή των γονέων σας ;"],
+    "context_set": "gr"
+    },
+    {"tag": "μεταδημοτευση λογω συνεχους διετους κατοικιας",
+    "patterns": ["μεταδημοτευση λογω συνεχους διετους κατοικιας","επιθυμω μεταδημοτευση λογω συνεχους διετους κατοικιας","χρειαζεται να γινει μεταδημοτευση λογω συνεχους διετους κατοικιας","θελω να κανω μεταδημοτευση λογω συνεχους διετους κατοικιας","λογω συνεχους διετους κατοικιας","επιθυμω την μεταδημοτευση μου λογω συνεχους διετους κατοικιας"],
+    "responses": ["Για την μεταδημότευση λόγω συνεχούς διετούς κατοικίας , θα χρειαστείτε τα εξής: 1) Αίτηση με την οποία αιτείστε τη μεταδημοτευση σας στο Δήμο μας . 2) Βεβαίωση μονίμου κατοικίας, η οποία εκδίδεται από το Πρωτόκολλο του Δήμου Χανίων, και δηλώνει τη συνεχή από διετίας κατοικία του στα όρια του Δήμου Χανίων. 3) Αστυνομική ταυτότητα . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "μεταδημοτευση λογω γαμου",
+    "patterns": ["μεταδημοτευση λογω γαμου","επιθυμω μεταδημοτευση λογω γαμου","χρειαζεται να γινει μεταδημοτευση λογω γαμου","θελω να κανω μεταδημοτευση λογω γαμου","λογω γαμου","επιθυμω την μεταδημοτευση μου λογω γαμου"],
+    "responses": ["Για την μεταδημότευση λόγω γάμου , θα χρειαστείτε τα εξής: 1) Αίτηση με την οποία αιτείστε τη μεταδημοτευση σας στο Δήμο μας . 2) Ληξιαρχική πράξη γάμου . 3) Αστυνομική ταυτότητα . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας",
+    "patterns": ["μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας μου","μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας των γονεων μου","επιθυμω μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας μου ή των γονέων μου","χρειαζεται να γινει μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας μου","θελω να κανω μεταδημοτευση μεταδημοτευση λογω ανακτησης της αρχικης δημοτικοτητας των γονέων μου","λογω ανακτησης της αρχικης δημοτικοτητας","επιθυμω την μεταδημοτευση μου λογω ανακτησης της αρχικης δημοτικοτητας","επιθυμω την μεταδημοτευση μου λογω ανακτησης της αρχικης δημοτικοτητας των γονεων μου"],
+    "responses": ["Για την μεταδημότευση λόγω ανάκτησης της αρχικής δημοτικότητας σας ή των γονέων σας , θα χρειαστείτε τα εξής: 1) Αίτηση με την οποία αιτείστε τη μεταδημοτευση σας στο Δήμο μας . 2) Υπεύθυνη δήλωση  εφάξαν χρήσης της δυνατότητας  απόκτής της αρχικής δημοτικότητα . 3) Αστυνομική ταυτότητα . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εγγραφη στους ειδικους καταλογους ετεροδημοτων",
+    "patterns": ["εγγραφη στους ειδικους καταλογους ετεροδημοτων","εγγραφη στους καταλογους ετεροδημοτων","επιθυμω την εγγραφη μου στους ειδικους καταλογους ετεροδημοτων ","χρειαζεται να γινει η εγγραφη μου στους ειδικους καταλογους ετεροδημοτων","θελω εγγραφη στους ειδικους καταλογους ετεροδημοτων","επιθυμω την μεταδημοτευση μου λογω ανακτησης της αρχικης δημοτικοτητας","επιθυμω εγγραφη στους καταλογους ετεροδημοτων"],
+    "responses": ["Για την εγγραφή σας στους ειδικούς καταλόγους ετεροδημοτών, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας με την οποία αιτείται εγγραφή στους ειδικούς καταλόγους ετεροδημοτών . 2) Οποιοδήποτε πρόσφατο έγγραφο αποδεικνύει την νέα Διεύθυνση Κατοικίας του δημότη (ενδεικτικά λογαριασμοί οργανισμών κοινής ωφελείας (ΔΕΚΟ), εκκαθαριστικό Εφορίας, κλπ) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη εκλογικου διαμερισματος",
+    "patterns": ["αλλαγη εκλογικου διαμερισματος","αλλαγη του τοπου που ψηφιζω","επιθυμω την αλλαγη εκλογικου διαμερισματος ","χρειαζεται να γινει αλλαγη εκλογικου διαμερισματος","θελω αλλαγη εκλογικου διαμερισματος","επιθυμω αλλαγη του μερους που ψηφιζω","επιθυμω την αλλαγη του τοπου που ψηφιζω"],
+    "responses": ["Για αλλαγή εκλογικού διαμερίσματος, θα χρειαστείτε τα εξής: 1) Αίτηση με την οποία αιτείται αλλαγή εκλογικού διαμερίσματος . 2) Οποιοδήποτε πρόσφατο έγγραφο αποδεικνύει την νέα Διεύθυνση Κατοικίας του δημότη (ενδεικτικά λογαριασμοί οργανισμών κοινής ωφελείας (ΔΕΚΟ), εκκαθαριστικό Εφορίας, κλπ) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εγγραφη ευρωπαιων πολιτων χωρων μελων της ευρωπαικης ενωσης σε ειδικους εκλογικους καταλογους",
+    "patterns": ["εγγραφη ευρωπαιων πολιτων χωρων μελων της ευρωπαικης ενωσης σε ειδικους εκλογικους καταλογους","εγγραφη ευρωπαιων πολιτων σε ειδικους εκλογικους καταλογους","επιθυμω την εγγραφη ευρωπαιων πολιτων σε ειδικους εκλογικους καταλογους ","θελω την εγγραφη ευρωπαιων πολιτων σε ειδικους εκλογικους καταλογους","επιθυμω εγγραφη ευρωπαιων πολιτων σε ειδικους εκλογικους καταλογους"],
+    "responses": ["Για την εγγραφή ευρωπαίων πολιτών χωρών μελών της Ευρωπαϊκής Ένωσης σε ειδικούς εκλογικούς καταλόγους, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας με την οποία αιτείται εγγραφή Ευρωπαίων πολιτών χωρών μελών της Ευρωπαϊκής Ένωσης σε ειδικούς εκλογικούς καταλόγους . 2) Οποιοδήποτε πρόσφατο έγγραφο αποδεικνύει την νέα Διεύθυνση Κατοικίας του δημότη (ενδεικτικά λογαριασμοί οργανισμών κοινής ωφελείας (ΔΕΚΟ), εκκαθαριστικό Εφορίας, κλπ) . 3) Φωτοαντίγραφο διαβατηρίου . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "διαγραφη απο τους ειδικους εκλογικους καταλογους ετεροδημοτων",
+    "patterns": ["διαγραφη απο τους ειδικους εκλογικους καταλογους ετεροδημοτων","διαγραφη απο τους εκλογικους καταλογους ετεροδημοτων","διαγραφη απο τους εκλογικους καταλογους","διαγραφη απο εκλογικους καταλογους ετεροδημοτων"],
+    "responses": ["Για διαγραφή από τους ειδικούς εκλογικούς καταλόγους ετεροδημοτών, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας με την οποία αιτείται αλλαγή εκλογικού διαμερίσματος . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+    {"tag": "electoral registers",
+    "patterns": ["electoral registers services","which services are provided by the electoral registers category","i want to catch up on with the electoral registers services ","to be aware of the electoral registers","to be aware of the electoral registers category services","electoral registers"],
+    "responses": ["The Εlectoral registers category provides the following services : 1) Metadimoteusi (the transfer of civil rights to another municipality). 2) Registrations with the special lists of hetero-citizens(hetero-citizen : a person who lives in a municipality other than the one in which he votes) . 3) Change of electoral district . 4) Registration of European citizens from countries that are members of the EU with the special electoral rolls. 5) Deletion from the special electoral rolls of hetero-citizens(hetero-citizen : a person who lives in a municipality other than the one in which he votes).Please let me know if you need more information."],
+    "context_set": "en"
+    },
+    {"tag": "metadimoteusi",
+    "patterns": ["metadimoteusi","transfer of civil rights to another municipality","to be aware of the metadimoteusi service ","i want to transfer my civil rights to another municipality","i am intresting in transferring my civil rights to another municipality"],
+    "responses": ["Inform me please, is transfer of your civil rights to our municipality due to continuous two-year residence , due to marriage or due to the recovery of the original popularity of yourself or your parents;"],
+    "context_set": "en"
+    },
+    {"tag": "metadimoteusi due to continuous two-year residence",
+    "patterns": ["metadimoteusi due to continuous two-year residence","i want to transfer my civil rights due to continuous two-year residence","the transfer of my civil rights to the municipality due to continuous two-year residence","due to continuous two-year residence"],
+    "responses": ["For the transfer of your civil rights to our municipality due to continuous two-year residence , you will need: 1) Application where he/she requests municipalization in our Municipality .2) Certificate of permanent residence, which is issued by the Protocol of the Municipality of Chania, and declares his/her continuous residence for two years within the boundaries of the Municipality of Chania. 3) ID .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "metadimoteusi due to marriage",
+    "patterns": ["metadimoteusi due to marriage","the transfer of my civil rights to the municipality due to marriage","due to marriage","i want to transfer my civil rights due to marriage"],
+    "responses": ["For the transfer of your civil rights to our municipality due to marriage , you will need: 1) Application where he/she requests municipalization in our Municipality .2) Marriage certificate . 3) ID .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "metadimoteusi due to the recovery of the original popularity of myself or my parents",
+    "patterns": ["metadimoteusi due to the recovery of the original popularity of myself or my parents","the transfer of my civil rights to the municipality due to the recovery of the original my popularity","the transfer of my civil rights to the municipality due to the recovery of my parents original popularity","the transfer of my civil rights to the municipality due to the recovery of the original popularity of myself or my parents","due to the recovery of my parents original popularity","due to the recovery of mine original popularity","i want to transfer my civil rights due to the recovery of my parents original popularity","i want to transfer my civil rights due to the recovery of mine original popularity"],
+    "responses": ["For the transfer of your civil rights to our municipality due to the recovery of the yours or your parents original popularity, you will need: 1) Application where he/she/they requests/request municipalization in our Municipality .2) Declaration of one-time possibility of obtaining the initial popularity . 3) ID .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "registrations with the special lists of hetero-citizens",
+    "patterns": ["registrations with the special lists of hetero-citizens","registrations for hetero-citizens","i want to register with the special lists of hetero-citizens"],
+    "responses": ["For registrations with the special lists of hetero-citizens, you will need: 1) An application requesting registration in the special lists of hetero-citizens (you will be asked to show you ID) .2) Any recent document that proves the new Residence Address of the citizen .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "change of electoral district",
+    "patterns": ["change of electoral district","electoral district change","i want to change my electoral district","i need to change my electoral district","i have to make electoral district change"],
+    "responses": ["For changing the electoral district, you will need: 1) Application requesting change of electoral district (you will be asked to show you ID) .2) Any recent document that proves the new Residence Address of the citizen .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "registration of european citizens from countries that are members of the eu with the special electoral district",
+    "patterns": ["registration of european citizens from countries that are members of the eu with the special electoral district","registration of european citizens","i want to register with the special electoral district for european citizens"],
+    "responses": ["For registration of european citizens from countries that are members of the eu with the special electoral district, you will need: 1) An application requesting registration of european citizens from countries that are members of the eu with the special electoral rolls (you will be asked to show you ID) .2) Any recent document that proves the new Residence Address of the citizen . 3) Photocopy of your passport .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "deletion from the special electoral district of hetero-citizens",
+    "patterns": ["deletion from the special electoral district of hetero-citizens","deletion from the special electoral district","i want mine deletion from the special electoral district"],
+    "responses": ["For deletion from the special electoral district of hetero-citizens, you will need: 1) An application requesting change of electoral district  (you will be asked to show you ID) .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+    {"tag": "διορθωση , αλλαγη στοιχειων",
+    "patterns": ["τι υπηρεσιες περιλαμβανει η κατηγορια διορθωση , αλλαγη στοιχειων","τι υπηρεσιες εχει η κατηγορια διορθωση , αλλαγη στοιχειων","τι περιλαμβανει η διορθωση , αλλαγη στοιχειων","υπηρεσιες διορθωσης , αλλαγης στοιχειων","κατηγοριες διορθωσης , αλλαγης στοιχειων","διορθωση , αλλαγη στοιχειων","τι ειναι η διορθωση , αλλαγη στοιχειων","διορθωση στοιχειων","αλλαγη στοιχειων","θελω διορθωση , αλλαγη στοιχειων","θελω διορθωση στοιχειων","θελω αλλαγη στοιχειων"],
+    "responses": ["Η κατηγορία διόρθωση , αλλαγή στοιχείων περιλαμβάνει τις εξής υπηρεσίες: 1) Διόρθωση κυρίου ονόματος . 2) Αλλαγή στοιχείων λόγω υιοθεσίας . 3) Αλλαγή στοιχείων λόγω εκούσιας ή δικαστικής αναγνώρισης τέκνου . 4) Αλλαγή επωνύμου . 5) Αλλαγή κυρίου ονόματος . 6) Αλλαγή θρησκεύματος . 7) Διόρθωση επωνύμου . 8) Διόρθωση πατρωνύμου ή μητρωνύμου . 9) Αλλαγή στοιχείων λόγω προσβολής πατρότητας . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "διορθωση κυριου ονοματος",
+    "patterns": ["διορθωση κυριου ονοματος","επιθυμω την διορθωση κυριου ονοματος ","χρειαζεται να γινει διορθωση κυριου ονοματος","θελω διορθωση κυριου ονοματος","επιθυμω την διορθωση του κυριου ονοματος μου","επιθυμω διορθωση κυριου ονοματος"],
+    "responses": ["Για διόρθωση κυρίου ονόματος, θα χρειαστείτε τα εξής: 1) Αίτηση του ενδιαφερόμενου, εφόσον είναι ενήλικος, ή του πατέρα του ή της μητέρας του εφόσον είναι ανήλικος . 2) Ληξιαρχική πράξη γέννησης από το αρμόδιο Ληξιαρχείο για τους γεννηθέντες εντός Ελλάδος. Για τους γεννηθέντες εκτός Ελλάδος απαιτείται ληξιαρχική πράξη γέννησης ΜΟΝΟ από το Ειδικό Ληξιαρχείο Αθηνών με καταχωρημένη τη διόρθωση. Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη στοιχειων λογω υιοθεσιας",
+    "patterns": ["αλλαγη στοιχειων λογω υιοθεσιας","επιθυμω την αλλαγη στοιχειων λογω υιοθεσιας ","χρειαζεται να γινει αλλαγη στοιχειων λογω υιοθεσιας","θελω αλλαγη στοιχειων λογω υιοθεσιας","επιθυμω την αλλαγη στοιχειων λογω υιοθεσιας","επιθυμω αλλαγη στοιχειων λογω υιοθεσιας"],
+    "responses": ["Για αλλαγή στοιχείων λόγω υιοθεσίας, θα χρειαστείτε τα εξής: 1) Αίτηση . 2) Αντίγραφο δικαστικής απόφασης υιοθεσίας, πιστοποιητικού Γραμματείας Πρωτοδικείου και έκθεση επίδοσης . 3) Ληξιαρχική Πράξη Γέννησης (φωτοτυπία της σελίδας του ληξιαρχείου με καταχωρημένα τα νέα στοιχεία) . 4) Απόσπασμα Ληξιαρχικής Πράξης γέννησης - βάπτισης (αρχική) πριν από τη σύνταξη της νέας ληξιαρχικής πράξης γέννησης . 5) Πιστοποιητικό εγγραφής στα Μητρώα Αρρένων του θετού πατέρα. 6) Πιστοποιητικό εγγραφής σε Δημοτολόγιο της θετής μητέρας ή πιστοποιητικό οικογενειακής κατάστασης (του Δήμου ή της Κοινότητας στην οποία ανήκουν οι θετοί γονείς) . 7) Ληξιαρχική πράξη γάμου των θετών γονέων . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη στοιχειων λογω εκουσιας η δικαστικης αναγνωρισης τεκνου",
+    "patterns": ["αλλαγη στοιχειων λογω εκουσιας η δικαστικης αναγνωρισης τεκνου","αλλαγη στοιχειων λογω εκουσιας αναγνωρισης τεκνου","αλλαγη στοιχειων λογω δικαστικης αναγνωρισης τεκνου","λογω δικαστικης αναγνωρισης τεκνου","λογω εκουσιας αναγνωρισης τεκνου","επιθυμω την αλλαγη στοιχειων λογω εκουσιας η δικαστικης αναγνωρισης τεκνου ","χρειαζεται να γινει αλλαγη στοιχειων λογω εκουσιας η δικαστικης αναγνωρισης τεκνου"],
+    "responses": ["Για την αλλαγή στοιχείων λόγω εκούσιας ή δικαστικής αναγνώρισης τέκνου, θα χρειαστείτε τα εξής: 1) Αίτηση του ιδίου του ενδιαφερομένου, εφόσον είναι ενήλικας ή του αναγνωρίσαντος ή της μητέρας του τέκνου, εφόσον είναι ανήλικο. . 2) Συμβολαιογραφική πράξη εκούσιας αναγνώρισης ή εφόσον η αναγνώριση είναι δικαστική, απαιτείται αντίγραφο της Δικαστικής Απόφασης Αναγνώρισης και πιστοποιητικό Γραμματείας Πρωτοδικείου και έκθεση επίδοσης ή έκθεση παραίτησης από τα ένδικα μέσα . 3) Ληξιαρχική Πράξη Γέννησης με τη μεταβολή στο περιθώριο (καταχωρημένη την αναγνώριση στην οποία αναφέρεται ο προσδιορισμός επωνύμου και που είναι δημότης το τέκνο). 4) Πιστοποιητικό του αναγνωρίσαντος πατρός από τα Μητρώα Αρρένων . 5) Σε περίπτωση γάμου των γονέων, ληξιαρχική πράξη γάμου και πιστοποιητικό οικογενειακής κατάστασης. Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη επωνυμου",
+    "patterns": ["αλλαγη επωνυμου","επιθυμω την αλλαγη επωνυμου ","χρειαζεται να γινει αλλαγη επωνυμου","θελω αλλαγη επωνυμου","επιθυμω αλλαγη του επωνυμου μου","επιθυμω αλλαγη του επωνυμου"],
+    "responses": ["Για αλλαγή επωνύμου, θα χρειαστείτε τα εξής: 1) Αίτηση - (συμπληρώνεται στην Υπηρεσία μας) . 2) Υπεύθυνη δήλωση (συμπληρώνεται στην Υπηρεσία μας) . 3) Φωτοτυπία ταυτότητας . 4) Παράβολο Δημοσίου 15,00 ευρώ (από οποιαδήποτε Εφορία) . 5) Ληξιαρχική Πράξη Γέννησης (μόνο αν ο πολίτης γεννήθηκε στο εξωτερικό) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη κυριου ονοματος",
+    "patterns": ["αλλαγη κυριου ονοματος","αλλαγη ονοματος","επιθυμω την αλλαγη κυριου ονοματος ","χρειαζεται να γινει αλλαγη του κυριου ονοματος μου","χρειαζεται να γινει αλλαγη του ονοματος μου","θελω αλλαγη του ονοματος μου","θελω αλλαγη του κυριου ονοματος μου","επιθυμω αλλαγη ονοματος","επιθυμω αλλαγη του ονοματος μου"],
+    "responses": ["Για αλλαγή κυρίου ονόματος, θα χρειαστείτε τα εξής: 1) Αίτηση του ενδιαφερόμενου, εφόσον είναι ενήλικος, ή του πατέρα του ή της μητέρας του εφόσον είναι ανήλικος. 2) Ληξιαρχική πράξη γέννησης - βάπτισης με την αλλαγή του κυρίου ονόματος . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη θρησκευματος",
+    "patterns": ["αλλαγη θρησκευματος","αλλαγη θρησκειας","επιθυμω την αλλαγη θρησκευματος μου ","χρειαζεται να γινει αλλαγη του θρησκευματος μου","χρειαζεται να γινει αλλαγη στο θρησκευμα μου"],
+    "responses": ["Για αλλαγή θρησκεύματος, θα χρειαστείτε τα εξής: 1) Αίτηση του ενδιαφερόμενου, εφόσον είναι ενήλικος, ή του πατέρα του ή της μητέρας του εφόσον είναι ανήλικος. 2) Αντίγραφο Ληξιαρχικής πράξης γέννησης - βάπτισης . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "διορθωση επωνυμου",
+    "patterns": ["διορθωση επωνυμου","διορθωση επωνυμιας","επιθυμω την διορθωση του επωνυμου μου","χρειαζεται να γινει διορθωση επωνυμου","χρειαζεται να γινει διορθωση στο επωνυμου μου"],
+    "responses": ["Για διόρθωση επωνύμου, θα χρειαστείτε τα εξής: 1) Αίτηση του ενδιαφερόμενου, εφόσον είναι ενήλικος, ή του πατέρα του ή της μητέρας του εφόσον είναι ανήλικος. 2) Διορθωμένη ληξιαρχική πράξη γέννησης. 3) Πιστοποιητικό εγγραφής Μητρώου Αρρένων του πατέρα ή εγγραφής Δημοτολογίου της μητέρας αντίστοιχα (όταν είναι αλλοδαποί απαιτείται πιστοποιητικό γεννήσεως από τη χώρα καταγωγής τους το οποίο πρέπει απαραιτήτως να είναι επίσημα επικυρωμένο και μεταφρασμένο). 4) Πιστοποιητικό οικογενειακής κατάστασης (σε περίπτωση που ο πατέρας ή η μητέρα είναι αλλοδαποί να εμφανίζονται σε ενδεικτική εγγραφή με το ορθό κύριο όνομα αντίστοιχα). Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "διορθωση πατρωνυμου η μητρωνυμου",
+    "patterns": ["διορθωση πατρωνυμου","διορθωση μητρωνυμου","διορθωση πατρωνυμου η μητρωνυμου","επιθυμω την διορθωση πατρωνυμου","επιθυμω την διορθωση μητρωνυμου","χρειαζεται να γινει διορθωση μητρωνυμου","χρειαζεται να γινει διορθωση πατρωνυμου","χρειαζεται να γινει διορθωση στο πατρωνυμο μου","χρειαζεται να γινει διορθωση στο μητρωνυμο μου"],
+    "responses": ["Για διόρθωση πατρωνύμου ή μητρωνύμου, θα χρειαστείτε τα εξής: 1) Αίτηση του ενδιαφερόμενου, εφόσον είναι ενήλικος, ή του πατέρα του ή της μητέρας του εφόσον είναι ανήλικος. 2) Πιστοποιητικό εγγραφής Μητρώου Αρρένων του πατέρα ή εγγραφής Δημοτολογίου της μητέρας αντίστοιχα (όταν είναι αλλοδαποί απαιτείται πιστοποιητικό γεννήσεως από τη χώρα καταγωγής τους το οποίο πρέπει απαραιτήτως να είναι επίσημα μεταφρασμένο). 3) Διορθωμένη ληξιαρχική πράξη γέννησης . 4) Πιστοποιητικό οικογενειακής κατάστασης (σε περίπτωση που ο πατέρας ή η μητέρα είναι αλλοδαποί να εμφανίζονται σε ενδεικτική εγγραφή με το ορθό κύριο όνομα αντίστοιχα). Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "αλλαγη στοιχειων λογω προσβολης πατροτητας",
+    "patterns": ["αλλαγη στοιχειων λογω προσβολης πατροτητας","επιθυμω την αλλαγη στοιχειων λογω προσβολης πατροτητας","επιθυμω αλλαγη στοιχειων λογω προσβολης πατροτητας","χρειαζεται να γινει αλλαγη στοιχειων λογω προσβολης πατροτητας"],
+    "responses": ["Για αλλαγή στοιχείων λόγω προσβολής πατρότητας, θα χρειαστείτε τα εξής: 1) Αίτηση του ιδίου του ενδιαφερομένου, εφόσον είναι ενήλικας ή της μητέρας του τέκνου, εφόσον είναι ανήλικο. 2) Αντίγραφο δικαστικής απόφασης προσβολής πατρότητας με έκθεση επίδοσης ή εκθέσεις παραιτήσεων από τα ένδικα μέσα και πιστοποιητικό Γραμματείας Πρωτοδικείου. 3) Ληξιαρχική πράξη γέννησης με τη μεταβολή στο περιθώριο .  Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+
+    {"tag": "correction / change of data",
+    "patterns": ["change of data","correction of data","correction / change of data","what are the servises that correction / change of data category provides","to be aware of the correction / change of data category ","what servises are included at the correction / change of data category"],
+    "responses": ["The correction / change of data category provides the following services: 1) First name correction . 2) Data change due to adoption . 3) Data change due to voluntary or judicial child's regognition . 4) Surname change . 5) First name change . 6) Religion change . 7) Surname correction . 8) Father's or mother's first name correction . 9) Data change due to paternity insult .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "first name correction",
+    "patterns": ["first name correction","name correction","i'm interested in first name correction","i need to correct my first name","i want to correct my first name","what do i need to do to correct my name"],
+    "responses": ["For first name correction , you will need : 1) Application .Ιf he/she is underage by his/her father or mother. 2) Birth certificate from the competent Registry Office (born in Greece).Birth certificate ONLY from the Special Registry of Athens with registered correction (born outside Greece).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "data change due to adoption",
+    "patterns": ["data change due to adoption","change due to adoption","i'm interested in data change due to adoption","i need data change due to adoption","i want to change data due to adoption","what do i need to do to change data due to adoption"],
+    "responses": ["For data change due to adoption , you will need : 1) Application . 2) Adoption's court desicion copy,First Instance Court certificate copy by secretariat and service report copy. 3) Birth Certificate (photocopy of the registry page with new data registered) . 4) Birth's - Baptism's certificate extract before writing the new birth's certificate . 5) Registration certificate in the Male Registers of the adoptive father. 6) Registration certificate in the Municipal Register of the adoptive mother or marital status certificate. 7) Marriage certificate of the adoptive parents . Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "data change due to voluntary or judicial child's regognition",
+    "patterns": ["data change due to voluntary or judicial child's regognition","data change due to child's voluntary regognition","data change due to child's judicial regognition","i'm interested in data change due to child's judicial regognition","i'm interested in data change due to child's voluntary regognition","i need data change due to child's judicial regognition","i want to change data due to child's voluntary regognition","what do i need to do to change data due to child's voluntary regognition"],
+    "responses": ["For data change due to voluntary or judicial child's regognition , you will need : 1) Application .Ιf he/she is underage by his/her father or mother. 2) A notarial act of voluntary recognition or if the recognition is judicial ,a Recognition Decision copy ,a First Instance Court certificate copy by secretariat and service or waiver report . 3) Birth Certificate with alteration in margin(registered recognition indicating the designation of the surname and which municipality does the child belongs as citizen) . 4) Certificate of the recognized father from the Male Registers . 5) A marriage and a marital status certificate (in case of parents marriage). Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "surname change",
+    "patterns": ["surname change","last name change","i'm interested in surname's change","i need to change my surname","i want to change my surname","i want to change my last name","what do i need to do to change my surname"],
+    "responses": ["For surname change , you will need : 1) Application- (to be completed in our Service). 2) Solemn declaration (to be completed in our Service). 3) Photocopy of ID . 4) A State Fee of 15,00 euro(from any Tax Office) . 5) Birth Certificate (only if the citizen was born abroad).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "first name change",
+    "patterns": ["first name change","name change","i'm interested in first name's change","i need to change my surname","i want to change my first name","what do i need to do to change my first name"],
+    "responses": ["For first name change , you will need : 1) Application.Ιf he/she is underage by his/her father or mother. 2) Birth - baptism certificate with the first name change .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "religion change",
+    "patterns": ["religion change","i'm interested in religion change","i need to change my religion","i want to change my religion","what do i need to do to change my religion"],
+    "responses": ["For religion change , you will need : 1) Application.Ιf he/she is underage by his/her father or mother. 2) A copy of birth- baptism certificate .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "surname correction",
+    "patterns": ["surname correction","last name correction","i'm interested in surname's correction","i need to correct my surname","i want to correct my surname","i want to correct my last name","what do i need to do to correct my surname"],
+    "responses": ["For surname correction , you will need : 1) Application.Ιf he/she is underage by his/her father or mother. 2) Corrected birth certificate. 3) Marital status certificate . 4) Registration certificate of the Male Register of the father or registration certificate of the Municipal Register of the mother .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "father's or mother's first name correction",
+    "patterns": ["father's or mother's first name correction","father's first name correction","mother's first name correction","i'm interested in mother's first name correction","i'm interested in father's first name correction","i need to correct my mother's first name","i need to correct my father's first name","i want to correct my surname","i want to correct my mother's first name","i want to correct my father's first name","what do i need to do to correct my mother's first name","what do i need to do to correct my father's first name"],
+    "responses": ["For father's or mother's first name correction , you will need : 1) Application.Ιf he/she is underage by his/her father or mother. 2) Corrected birth certificate. 3) Marital status certificate . 4) Registration certificate of the Male Register of the father or registration certificate of the Municipal Register of the mother.Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "data change due to paternity insult",
+    "patterns": ["data change due to paternity insult","paternity insult","i'm interested in data change due to paternity insult","i need to change data due to paternity insult","i want to change my data due to paternity insult","what do i need to do to change my data due to paternity insult"],
+    "responses": ["For data change due to paternity insult , you will need : 1) Application .Ιf he/she is underage by his/her father or mother. 2) Court decision copy insulting paternity with service or waivers reports and First Instance Court certificate copy by secretariat . 3). Birth Certificate with alteration in margin .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+
+
+
+    
+
+
+
+
+    {"tag": "μητρωα αρρενων",
+    "patterns": ["τι υπηρεσιες περιλαμβανουν τα μητρωα αρρενων","τι υπηρεσιες περιλαμβανει η κατηγορια μητρωα αρρενων","τι περιλαμβανουν τα μητρωα αρρενων","υπηρεσιες για μητρωα αρρενων","υπηρεσιες μητρωων αρρενων","κατηγοριες μητρωων αρρενων","μητρωα αρρενων","τι ειναι τα μητρωα αρρενων"],
+    "responses": ["Τα μητρώα Αρρένων περιλαμβάνουν τις εξής υπηρεσίες: 1) Πιστοποιητικό εγγραφής στα μητρώα αρρένων . 2) Πιστοποιητικό μη εγγραφής στα μητρώα αρρένων . 3) Εγγραφή ανηλίκου στα μητρώα αρρένων . 4) Εγγραφή ενηλίκου στα μητρώα αρρένων . 5) Εγγραφή στα μητρώα αρρένων αλλοδαπού άρρενος υιοθετηθέντος από Έλληνες γονείς . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο εγγραφης στα μητρωα αρρενων",
+    "patterns": ["πιστοποιητικο εγγραφης στα μητρωα αρρενων","επιθυμω την εκδοση πιστοποιητικου εγγραφης στα μητρωα αρρενων ","χρειαζεται να γινει εκδοση πιστοποιητικου εγγραφης στα μητρωα αρρενων","θελω εκδοση πιστοποιητικου εγγραφης στα μητρωα αρρενων","επιθυμω την εκδοση πιστοποιητικου εγγραφης στα μητρωα αρρενων","επιθυμω πιστοποιητικο εγγραφης στα μητρωα αρρενων"],
+    "responses": ["Για την έκδοση πιστοποιητικου εγγραφής στα μητρώα αρρένων, θα χρειαστείτε τα εξής: 1) Αίτηση (δεν απαιτείται για την ηλεκτρονική υποβολή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο μη εγγραφης στα μητρώα αρρενων",
+    "patterns": ["πιστοποιητικο μη εγγραφης στα μητρωα αρρενων","επιθυμω την εκδοση πιστοποιητικου μη εγγραφης στα μητρωα αρρενων ","χρειαζεται να γινει εκδοση πιστοποιητικου μη εγγραφης στα μητρωα αρρενων","θελω εκδοση πιστοποιητικου μη εγγραφης στα μητρωα αρρενων","επιθυμω την εκδοση πιστοποιητικου μη εγγραφης στα μητρωα αρρενων","επιθυμω πιστοποιητικο μη εγγραφης στα μητρωα αρρενων"],
+    "responses": ["Για την έκδοση πιστοποιητικου μη εγγραφής στα μητρώα αρρένων, θα χρειαστείτε τα εξής: 1) Αίτηση (δεν απαιτείται για την ηλεκτρονική υποβολή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εγγραφη ανηλικου στα μητρωα αρρενων",
+    "patterns": ["εγγραφη ανηλικου στα μητρωα αρρενων","επιθυμω την εεγγραφη ανηλικου στα μητρωα αρρενων ","τι χρειαζεται για την εγγραφη ανηλικου στα μητρωα αρρενων","θελω εγγραφη ανηλικου στα μητρωα αρρενων","επιθυμω την εγγραφη ανηλικου στα μητρωα αρρενων","επιθυμω εγγραφη ανηλικου στα μητρωα αρρενων","θελω να μαθω τι χρειαζεται για την εγγραφη ανηλικου στα μητρωα αρρενων"],
+    "responses": ["Για την εγγραφή ανηλίκου στα μητρώα αρρένων, θα χρειαστείτε τα εξής: 1) Αίτηση Εγγραφής του πατέρα και της μητέρας (σχετικό έντυπο χορηγείται από την Υπηρεσία). 2) Υπεύθυνη δήλωση περί μη εγγραφής στα Μητρώα Αρρένων του πατέρα ή της μητέρας του παιδιού (σχετικό έντυπο χορηγείται από την Υπηρεσία). 3) Ληξιαρχική πράξη γέννησης (σε περίπτωση που έχει γεννηθεί στο εξωτερικό, χρειάζεται πράξη του Ειδικού Ληξιαρχείου Αθηνών). 4) Ληξιαρχική πράξη γάμου των γονέων (σε περίπτωση τέλεσης του γάμου στο εξωτερικό , χρειάζεται πράξη του Ειδικού Ληξιαρχείου Αθηνών). 5) Πιστοποιητικό Μητρώου Αρρένων του πατέρα. 6) Πιστοποιητικό Δημοτολογίου της μητέρας. 7) Δύο φωτογραφίες του παιδιού. 8) Αρνητική πράξη καταχώρησης από τα Μητρώα Αρρένων του Δήμου ή της Κοινότητας του τόπου κατοικίας των γονέων κατά το έτος γέννησής του παιδιού, όταν η γέννησή του έχει γίνει πριν το έτος 1993. 9) Διαβατήρια γονέων. 10) Δελτίο ελληνικής αστυνομικής ταυτότητας γονέα. ΓΙΑ ΤΟΥΣ ΕΥΡΙΣΚΟΜΕΝΟΥΣ ΣΤΟ ΕΞΩΤΕΡΙΚΌ ΕΠΙΠΡΟΣΘΈΤΩΣ ΧΡΕΙΆΖΕΤΑΙ: 1) Πράξη καθορισμού ηλικίας απο τον Έλληνα Πρόξενο της χώρας όπου το παιδί διαμένει. 2) Φωτοτυπίες ξένου ή Ελληνικού διαβατηρίου του παιδιού. 3) Πιστοποιητικό μονίμου κατοικίας και αφιξαναχωρήσεων από τον Έλληνα Πρόξενο της χώρας, όπου το παιδί διαμένει, από ηλικίας άνω των δεκαεπτά (17) ετών . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εγγραφη ενηλικου στα μητρωα αρρενων",
+    "patterns": ["εγγραφη ενηλικου στα μητρωα αρρενων","επιθυμω την εγγραφη ενηλικου στα μητρωα αρρενων ","τι χρειαζεται για την εγγραφη ενηλικου στα μητρωα αρρενων","θελω εγγραφη ενηλικου στα μητρωα αρρενων","επιθυμω την εγγραφη ενηλικου στα μητρωα αρρενων","επιθυμω εγγραφη ενηλικου στα μητρωα αρρενων","θελω να μαθω τι χρειαζεται για την εγγραφη ενηλικου στα μητρωα αρρενων"],
+    "responses": ["Για την εγγραφή ενηλίκου στα μητρώα αρρένων, θα χρειαστείτε τα εξής: 1)  Αίτηση Εγγραφής του ενδιαφερόμενου (σχετικό έντυπο χορηγείται από την Υπηρεσία). 2) Υπεύθυνη δήλωση περί μη εγγραφής σε Μητρώα Αρρένων του ενδιαφερόμενου (σχετικό έντυπο χορηγείται από την Υπηρεσία) . 3)  Ληξιαρχική πράξη γέννησης (σε περίπτωση που έχει γεννηθεί στο εξωτερικό, χρειάζεται πράξη του Ειδικού Ληξιαρχείου Αθηνών) . 4) Ληξιαρχική πράξη γάμου των γονέων (σε περίπτωση τέλεσης του γάμου στο εξωτερικό, χρειάζεται πράξη του Ειδικού Ληξιαρχείου Αθηνών) . 5) Πιστοποιητικό Μητρώου Αρρένων του πατέρα . 6) Πιστοποιητικό Δημοτολογίου της μητέρας . 7) Δύο φωτογραφίες . 8) Αρνητική πράξη καταχώρησης από τα Μητρώα Αρρένων του Δήμου ή της Κοινότητας του τόπου κατοικίας των γονέων κατά το έτος γέννησής του ενδιαφερόμενου, ή από το Δήμο ή την Κοινότητα που πιθανόν οι γονείς έχουν οικογενειακή μερίδα. Η αρνητική αυτή πράξη χρειάζεται, δεδομένου ότι στην περίπτωση εγγραφής ενηλίκου αδήλωτου σε Μητρώα Αρρένων, υπάρχει το δικαίωμα επιλογής του ενηλίκου σε ποια Μητρώα Αρρένων θα εγγραφεί . 9) Φωτοτυπία διαβατηρίου του . 10) Δελτίο ελληνικής αστυνομικής ταυτότητας γονέων . ΓΙΑ ΤΟΥΣ ΕΥΡΙΣΚΟΜΕΝΟΥΣ ΣΤΟ ΕΞΩΤΕΡΙΚΌ ΕΠΙΠΡΟΣΘΈΤΩΣ ΧΡΕΙΆΖΕΤΑΙ: 1) Αίτηση - Δήλωση του ενδιαφερόμενου, η οποία κατατίθεται στο Ελληνικό Προξενείο . 2) Πράξη καθορισμού ηλικίας από τον Έλληνα Πρόξενο της χώρας όπου ο ενδιαφερόμενος διαμένει . 3) Πιστοποιητικό μόνιμου κατοίκου εξωτερικού από τον Έλληνα Πρόξενο της χώρας όπου ο ενδιαφερόμενος διαμένει . 4) Φωτοτυπίες διαβατηρίου . 5) Εν ισχύ άδεια παραμονής του ενδιαφερομένου στην Ελλάδα, σε περίπτωση που γεννήθηκε στο εξωτερικό και διαμένει μόνιμα πλέον στη χώρα μας . 6) Πιστοποιητικό αφιξαναχωρήσεων . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις",
+    "patterns": ["εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","επιθυμω την εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις ","τι χρειαζεται για την εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","θελω εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","επιθυμω την εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","επιθυμω εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","θελω να μαθω τι χρειαζεται για την εγγραφη στα μητρωα αρρενων αλλοδαπου αρρενος υιοθετηθεντος απο ελληνες γονεις","εγγραφη στα μητρωα αρρενων αλλοδαπου"],
+    "responses": ["Για την εγγραφή στα μητρώα αρρένων αλλοδαπού άρρενος υιοθετηθέντος από Έλληνες γονείς, θα χρειαστείτε τα εξής: 1) Αίτηση θετού πατέρα ή θετής μητέρας (σχετικό έντυπο χορηγείται από την Υπηρεσία)  . 2) Υπεύθυνη Δήλωση περί μη εγγραφής του ενδιαφερόμενου στα Μητρώα Αρρένων του Δήμου ή της Κοινότητας, που είναι εγγεγραμμένος ο θετός πατέρας ή η Θετή μητέρα . 3) Αρχική Ληξιαρχική Πράξη Γέννησης (Σε περίπτωση γέννησης του παιδιού στο εξωτερικό, ξένο πιστοποιητικό γέννησης και επίσημη μετάφρασή του) . 4) Ληξιαρχική Πράξη γέννησης που συντάχθηκε με το Ν.Δ.610/70 . 5) Δικαστική Απόφαση υιοθεσίας, πιστοποιητικό τελεσιδικίας, έκθεση επίδοσης . 6) Δεδικασμένο Ελληνικού Δικαστηρίου της αλλοδαπής απόφασης υιοθεσίας, εφόσον αυτή έχει γίνει στο εξωτερικό . 7) Ψευδώνυμα, σε περίπτωση που χρησιμοποιήθηκαν για την έκδοση δικαστικής απόφασης υιοθεσίας . 8) Πιστοποιητικό Μητρώου Αρρένων του θετού πατέρα . 9) Πιστοποιητικό Δημοτολογίου της θετής μητέρας . 10) Ληξιαρχική πράξη γάμου των θετών γονέων . 11) Πιστοποιητικό οικογενειακής κατάστασης των θετών γονέων . 12) Φωτοτυπία ταυτοτήτων θετών γονέων . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+
+    {"tag": "male registries",
+    "patterns": ["male registries","what are the servises that male registries category provides","to be aware of the male registries category ","what servises are included at the male registries category"],
+    "responses": ["The male registries category provides the following services: 1) Registration certificate in the male registries . 2) Non-registration certificate in the male registries. 3) Underage registration in the male registries. 4) Adult registration in the male registries. 5) Adopted foreign male's by Greek parents registration in the male registers .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "registration certificate in the male registries",
+    "patterns": ["registration certificate in the male registries","i want registration certificate in the male registries","what do i need to do to take registration certificate in the male registries"],
+    "responses": ["For registration certificate in the male registries, you will need : 1) Application (not required for online submission).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "non-registration certificate in the male registries",
+    "patterns": ["non-registration certificate in the male registries","i want non-registration certificate in the male registries","what do i need to do to take non-registration certificate in the male registries"],
+    "responses": ["For non-registration certificate in the male registries, you will need : 1) Application (not required for online submission).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "underage registration in the male registries",
+    "patterns": ["underage registration in the male registries","i want to register an underage in the male registries","what do i need to do to make underage registration in the male registries"],
+    "responses": ["For underage registration in the male registries, you will need : 1) Application for registration of the parents. 2) Solemn declaration of non-registration in the Male Registers from aparent. 3) Birth certificate. 4) Marriage certificate of the parents. 5) Father's Males Register certificate. 6) Municipal Register certificate of the mother. 7) Two photos of the child. 8) Parents' passports. 9) Parent's identity card. 10) Registration's negative act by the Male Registers of the Municipality or the Community of the parents' place of residence in the year of the child's birth (if the child was born before 1993). IN ADDITION, FOR THOSE ABROAD : 1) Determination act of age by the Greek Consul of the country where the child resides. 2) Photocopies of the foreign or Greek passport of the child. 3) Permanent residence Certificate from the Greek Consul of the country where the child resides(when child 17 or more) .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "adult registration in the male registries",
+    "patterns": ["adult registration in the male registries","i want to register in the male registries","i want to register an adult in the male registries","what do i need to do to make underage registration in the male registries"],
+    "responses": ["For adult registration in the male registries, you will need : 1) Request for registration. 2) Solemn declaration of non-registration in the Male Registers. 3) Birth certificate. 4) Marriage certificate of the parents. 5) Father's Males Register certificate. 6) Municipal Register certificate of the mother. 7) Two photos. 8) Parents' passports. 9) Photocopy of the passport. 10) Registration's negative act by the Male Registers of the Municipality or the Community of the parents' place of residence in the year of the person's birth, or by the Municipality or Community where the parents may have a family.This negative act is needed, since in the case of registration of an undeclared adult in Male Registers, there is the right of the adult to choose in which Male Registers to be registered. IN ADDITION, FOR THOSE ABROAD : 1) Determination act of age by the Greek Consul of the country where the person resides. 2) Photocopies of the passport. 3) Valid residence permit of the person concerned in Greece, in case he was born abroad and now resides permanently in our country. 4) Request - Declaration,whis is submitted to the Greek Consulate . 5) Permanent resident abroad certificate from the Greek Consul of the country where the person resides. 6) Certificate of arrival .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "adopted foreign male's by Greek parents registration in the male registers",
+    "patterns": ["adopted foreign male's by Greek parents registration in the male registers","i want to register my male foreign adopted child in the male registries","what do i need to do to make registration for adopted foreign male in the male registers"],
+    "responses": ["For adopted foreign male's by Greek parents registration in the male registers, you will need : 1) Request from the adoptive father or mother. 2) Solemn declaration of non-registration in the Male Registers of the Municipality or the Community, where the adoptive father or adoptive mother is registered. 3) Initial birth certificate. 4) Birth certificate . 5) Adoptive father's Males Register certificate. 6) Municipal Register certificate of the adoptive mother. 7) Court  decision of adoption,finality certificate and service report . 8) Marriage certificate of the adoptive parents. 9) Photocopy of the IDs of the adoptive parents. 10) Marital status certificate of the adoptive parents. 11) Nicknames(in case they were used to issue a court decision of the adoption ). 12) Res judicata of the Greek Court of foreign adoption decision, if it has been made abroad. Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+
+
+
+
+
+    {"tag": "πιστοποιητικα",
+    "patterns": ["τι υπηρεσιες περιλαμβανουν τα πιστοποιητικα","τι υπηρεσιες περιλαμβανει η κατηγορια πιστοποιητικα","τι περιλαμβανουν τα πιστοποιητικα","υπηρεσιες για πιστοποιητικα","υπηρεσιες πιστοποιητικων","κατηγοριες πιστοποιητικων","πιστοποιητικα","τι ειναι τα πιστοποιητικα"],
+    "responses": ["Η κατηγορία πιστοποιητικά περιλαμβάνει τις εξής υπηρεσίες: 1) Πιστοποιητικό οικογενειακής κατάστασης . 2) Πιστοποιητικό γέννησης . 3) Πιστοποιητικό εντοπιότητας . 4) Πιστοποιητικό ταυτοπροσωπίας (για τέκνα έως 12 ετών) . 5) Πιστοποιητικό πλησιέστερων συγγενών . 6) Πιστοποιητικό στρατολογίας για μειωμένη θητεία ή αναβολή . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο οικογενειακης καταστασης",
+    "patterns": ["πιστοποιητικο οικογενειακης καταστασης","επιθυμω την εκδοση πιστοποιητικου οικογενειακης καταστασης ","χρειαζεται να γινει εκδοση πιστοποιητικου οικογενειακης καταστασης","θελω εκδοση πιστοποιητικου οικογενειακης καταστασης","επιθυμω την εκδοση πιστοποιητικου οικογενειακης καταστασης","επιθυμω πιστοποιητικο οικογενειακης καταστασης","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου οικογενειακης καταστασης"],
+    "responses": ["Για την έκδοση πιστοποιητικού οικογενειακής κατάστασης, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας (δεν απαιτείται για την ηλεκτρονική υποβολή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο γεννησης",
+    "patterns": ["πιστοποιητικο γεννησης","επιθυμω την εκδοση πιστοποιητικου γεννησης ","χρειαζεται να γινει εκδοση πιστοποιητικου γεννησης","θελω εκδοση πιστοποιητικου γεννησης","επιθυμω την εκδοση πιστοποιητικου γεννησης","επιθυμω πιστοποιητικο γεννησης","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου γεννησης"],
+    "responses": ["Για την έκδοση πιστοποιητικού γέννησης, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας (δεν απαιτείται για την ηλεκτρονική υποβολή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο εντοπιοτητας",
+    "patterns": ["πιστοποιητικο εντοπιοτητας","επιθυμω την εκδοση πιστοποιητικου εντοπιοτητας ","χρειαζεται να γινει εκδοση πιστοποιητικου εντοπιοτητας","θελω εκδοση πιστοποιητικου εντοπιοτητας","επιθυμω την εκδοση πιστοποιητικου εντοπιοτητας","επιθυμω πιστοποιητικο εντοπιοτητας","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου εντοπιοτητας"],
+    "responses": ["Για την έκδοση πιστοποιητικού εντοπιότητας, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας (δεν απαιτείται για την ηλεκτρονική υποβολή) . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο ταυτοπροσωπιας (για τέκνα έως 12 ετών)",
+    "patterns": ["πιστοποιητικο ταυτοπροσωπιας (για τέκνα έως 12 ετών)","πιστοποιητικο ταυτοπροσωπιας","επιθυμω την εκδοση πιστοποιητικου ταυτοπροσωπιας ","χρειαζεται να γινει εκδοση πιστοποιητικου ταυτοπροσωπιας","θελω εκδοση πιστοποιητικου ταυτοπροσωπιας","επιθυμω την εκδοση πιστοποιητικου ταυτοπροσωπιας","επιθυμω πιστοποιητικο ταυτοπροσωπιας","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου ταυτοπροσωπιας"],
+    "responses": ["Για την έκδοση πιστοποιητικού ταυτοπροσωπίας (για τέκνα έως 12 ετών), θα χρειαστείτε τα εξής: 1) Αίτηση γονέα με επίδειξη αστυνομικής ταυτότητας . 2) Υπεύθυνη δήλωση του αιτούντα γονέα . 3) Δύο (2) φωτογραφίες του τέκνου . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο πλησιεστερων συγγενων",
+    "patterns": ["πιστοποιητικο πλησιεστερων συγγενων","πιστοποιητικο πλησιεστερων συγγενων","επιθυμω την εκδοση πιστοποιητικου πλησιεστερων συγγενων ","χρειαζεται να γινει εκδοση πιστοποιητικου πλησιεστερων συγγενων","θελω εκδοση πιστοποιητικου πλησιεστερων συγγενων","επιθυμω την εκδοση πιστοποιητικου των πλησιεστερων συγγενων","επιθυμω πιστοποιητικο πλησιεστερων συγγενων","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου πλησιεστερων συγγενων"],
+    "responses": ["Για την έκδοση πιστοποιητικού πλησιέστερων συγγενών, θα χρειαστείτε τα εξής: 1) Έντυπη αίτηση, η οποία χορηγείται από την υπηρεσία μας. Για την συμπλήρωσή της είναι απαραίτητη η επίδειξη της αστυνομικής ταυτότητας ή διαβατηρίου ή διπλώματος οδήγησης του ενδιαφερομένου . 2) Ληξιαρχική Πράξη Θανάτου. Ζητείται αυτεπάγγελτα εφόσον δηλωθεί η ακριβής ημερομηνία θανάτου και το Ληξιαρχείο που δηλώθηκε ο θάνατος . 3) Δύο υπεύθυνες δηλώσεις του Ν.1599/1986 από μάρτυρες που είναι γνώστες της οικογενειακής κατάστασης του θανούντα μόνο στην περίπτωση που άνδρας αποβιώσας δεν είναι εγγεγραμμένος σε κανένα Δημοτολόγιο Δήμου της χώρας, αλλά είναι εγγεγραμμένος στα Μητρώα Αρρένων του Δήμου μας . Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+    {"tag": "πιστοποιητικο στρατολογιας για μειωμενη θητεια η αναβολη",
+    "patterns": ["πιστοποιητικο στρατολογιας για μειωμενη θητεια η αναβολη","πιστοποιητικο στρατολογιας για μειωμενη θητεια","πιστοποιητικο στρατολογιας για αναβολη","επιθυμω την εκδοση πιστοποιητικου στρατολογιας για αναβολη ","επιθυμω την εκδοση πιστοποιητικου στρατολογιας για μειωμενη θητεια ","χρειαζεται να γινει εκδοση πιστοποιητικου στρατολογιας για μειωμενη θητεια","χρειαζεται να γινει εκδοση πιστοποιητικου στρατολογιας για αναβολη","θελω εκδοση πιστοποιητικου στρατολογιας για αναβολη","θελω εκδοση πιστοποιητικου στρατολογιας για μειωμενη θητεια","επιθυμω την εκδοση πιστοποιητικου στρατολογιας για μειωμενη θητεια","επιθυμω την εκδοση πιστοποιητικου στρατολογιας για αναβολη","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου στρατολογιας για αναβολη","θελω να μαθω τι χρειαζεται για την εκδοση πιστοποιητικου στρατολογιας για μειωμενη θητεια"],
+    "responses": ["Για την έκδοση πιστοποιητικού στρατολογίας για μειωμένη θητεία ή αναβολή, θα χρειαστείτε τα εξής: 1) Αίτηση με επίδειξη αστυνομικής ταυτότητας του ενδιαφερόμενου ή γονέα. Παρακαλώ ενημερώστε με αν χρειαστείτε οτιδήποτε άλλο!"],
+    "context_set": "gr"
+    },
+
+
+
+
+    {"tag": "certificates",
+    "patterns": ["certificates","certificate","what are the servises that certificates category provides","to be aware of the certificates category ","what servises are included at the certificates category"],
+    "responses": ["The certificates category provides the following services: 1) Marital status certificate . 2) Birth certificate . 3) Locality certificate. 4) Identity certificate . 5) Closest relatives certificate . 6) Enlistment certificate for reduced service or deferral  .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "marital status certificate",
+    "patterns": ["marital status certificate","i'm interested in marital status certificate","i want a marital status certificate","what do i need to do to take a marital status certificate"],
+    "responses": ["For marital status certificate, you will need : 1) Application by showing an ID (not required for online submission).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "birth certificate",
+    "patterns": ["birth certificate","i'm interested in birth certificate","i want a birth certificate","what do i need to do to take a i want a birth certificate"],
+    "responses": ["For birth certificate, you will need : 1) Application by showing an ID (not required for online submission).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "locality certificate",
+    "patterns": ["locality certificate","i'm interested in locality certificate","i want a locality certificate","what do i need to do to take a i want a locality certificate"],
+    "responses": ["For locality certificate, you will need : 1) Application by showing an ID (not required for online submission).Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "identity certificate",
+    "patterns": ["identity certificate","i'm interested in identity certificate","i want a identity certificate","what do i need to do to take a i want a identity certificate"],
+    "responses": ["For identity certificate, you will need : 1) Application by showing an ID (not required for online submission). 2) Solemn declaration by the requesting parent 3) Two (2) photos of the child .Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "closest relatives certificate",
+    "patterns": ["closest relatives certificate","i'm interested in closest relatives certificate","i want a closest relatives certificate","what do i need to do to take a i want a closest relatives certificate"],
+    "responses": ["For closest relatives certificate, you will need : 1) Paper application, which is issued by our service. In order to complete it, it is necessary to show the police ID or passport or driver's license of the person concerned . 2) Death Certificate. It is requested ex officio if the exact date of death and the Registry Office where the death was declared are declared. 3) Two solemn declarations by witnesses who are aware of the marital status of the deceased if the deceased is not registered in any Municipal Register of the Municipality of the country, but is registered in the Male Registers of our Municipality. Please let me know if you need more information!"],
+    "context_set": "en"
+    },
+    {"tag": "enlistment certificate for reduced service or deferral",
+    "patterns": ["enlistment certificate for reduced service or deferral","i'm interested in an enlistment certificate for reduced service or deferral","i want an enlistment certificate for reduced service or deferral","what do i need to do to take an enlistment certificate for reduced service or deferral"],
+    "responses": ["For an enlistment certificate for reduced service or deferral, you will need : 1) Application by showing the ID of the interested or parent.Please let me know if you need more information!"],
+    "context_set": "en"
+    }
+   
+
+
+  ]
+}
